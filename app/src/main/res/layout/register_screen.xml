@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/parkinsans_bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/RegTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_style"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="2dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Masukan Username anda"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+            <EditText
+                android:id="@+id/RegTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_style"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="2dp"
+                android:hint="Masukan Email anda"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+            <EditText
+                android:id="@+id/RegTextTelp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:background="@drawable/text_style"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="2dp"
+                android:hint="Masukan No Telepon anda"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+            <EditText
+                android:id="@+id/RegTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_style"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="2dp"
+                android:hint="Masukan kata sandi anda"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+            <EditText
+                android:id="@+id/RegTextPasswordVer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_style"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="2dp"
+                android:hint="Masukkan kembali kata sandi anda"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_primary_style"
+            android:textSize="18sp"
+            android:fontFamily="@font/parkinsans_medium"
+            android:text="Login"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mempunyai Akun ?"
+                android:fontFamily="@font/parkinsans_regular"
+                />
+            <TextView
+                android:id="@+id/ButtonToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Login"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/parkinsans_medium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

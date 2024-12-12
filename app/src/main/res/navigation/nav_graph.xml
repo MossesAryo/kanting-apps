@@ -14,16 +14,30 @@
         <action
             android:id="@+id/Login_to_First"
             app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/Go_To_Reg"
+            app:destination="@id/RegisterFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.kasir_mini.FirstFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_first"/>
 
         <action
             android:id="@+id/action_keluar"
+            app:destination="@id/LoginFragment" />
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.kasir_mini.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/register_screen">
+
+        <action
+            android:id="@+id/to_login"
             app:destination="@id/LoginFragment" />
     </fragment>
 </navigation>
