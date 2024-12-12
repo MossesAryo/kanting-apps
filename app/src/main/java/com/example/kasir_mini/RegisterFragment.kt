@@ -33,6 +33,10 @@ class RegisterFragment : Fragment() {
 
             findNavController().navigate(R.id.action_keluar)
         }
+        binding.ButtonLogin.setOnClickListener{
+
+            findNavController().navigate(R.id.action_keluar)
+        }
     }
 
     override fun onDestroyView() {

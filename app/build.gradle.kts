@@ -5,13 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.kasir_mini"
-    //noinspection GradleDependency
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.kasir_mini"
         minSdk = 24
-        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
