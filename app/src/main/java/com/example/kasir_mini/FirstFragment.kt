@@ -29,12 +29,8 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.username.setText("Username :" + requestLogin.email)
-        binding.password.setText("Kata Sandi :" + requestLogin.password)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_keluar)
-        }
+
     }
 
     override fun onDestroyView() {

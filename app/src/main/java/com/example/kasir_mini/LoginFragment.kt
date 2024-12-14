@@ -32,8 +32,10 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.ButtonLogin.setOnClickListener{
-            requestLogin.email       = binding.LoginTextMail.getText().toString();
-            requestLogin.password    = binding.LoginTextPassword.getText().toString();
+//            requestLogin.email       = binding.LoginTextMail.getText().toString();
+//            requestLogin.password    = binding.LoginTextPassword.getText().toString();
+              requestLogin.username = binding.LoginTextMail.getText().toString();
+
 
             findNavController().navigate(R.id.Login_to_First)
         }

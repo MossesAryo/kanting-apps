@@ -1,42 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:padding="16dp">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username: "
-            android:textSize="15dp"
-            android:fontFamily="@font/parkinsans_medium"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/parkinsans_medium"
-            android:textSize="15dp"
-            android:text="Kata Sandi: "
-            tools:ignore="MissingConstraints" />
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Keluar"
-            android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Selamat Siang"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/parkinsans_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Mosses Aryo Bimo"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/parkinsans_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <SearchView
+                    android:layout_width="370dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/text_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Promo Minggu ini"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/parkinsans_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:text="Lihat Semua"
+                    android:textSize="13dp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/parkinsans_bold" />
+
+            </LinearLayout>
+
+
+
+                <HorizontalScrollView
+                    android:layout_width="800dp"
+                    android:layout_height="150dp"
+                    android:fillViewport="true"
+                    android:scrollbars="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="238dp"
+                            android:layout_height="138dp"
+                            android:src="@drawable/promo" />
+
+                        <ImageView
+                            android:layout_width="238dp"
+                            android:layout_height="138dp"
+                            android:src="@drawable/promo" />
+                        <ImageView
+                            android:layout_width="238dp"
+                            android:layout_height="138dp"
+                            android:src="@drawable/promo" />
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Terpopuler"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/parkinsans_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="Lihat Semua"
+                    android:textSize="13dp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/parkinsans_bold" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="800dp"
+                android:layout_height="200dp"
+                android:fillViewport="true"
+                android:scrollbars="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/nasgor" />
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/soto" />
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/nasgor" />
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/soto" />
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/nasgor" />
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+
     </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
